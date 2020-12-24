@@ -8,7 +8,13 @@ function sayHello() {
     return "Hello";
 }
 
-// addTwoNumbers function
-function addTwoNumbers(num1, num2) {
+// isFive function
+function isFive(num) {
+    return (num = typeof "boolean") && ((num === 5)  && (num = typeof "number"));
+
+}
+
+// add function
+function add(num1, num2) {
 
 }
