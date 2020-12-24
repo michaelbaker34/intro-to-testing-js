@@ -29,3 +29,10 @@ describe("sayHello", function() {
         expect(sayHello()).not.toBe(undefined);
     })
 })
+
+// Unit tests for the addTwoNumbers function
+describe("addTwoNumbers", function() {
+    it("should be a defined function", function() {
+        expect(typeof addTwoNumbers).toBe("function");
+    })
+})
