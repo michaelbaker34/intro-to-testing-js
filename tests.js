@@ -46,6 +46,19 @@ describe("isFive", function () {
     });
 })
 
+// unit tests for isEven function
+describe("isEven", function () {
+    it("should be a defined function", function () {
+        expect(typeof isEven).toBe("function");
+    });
+    it("should return boolean", function () {
+        expect(typeof isEven()).toBe("boolean");
+    });
+    it("should return true when passed the number 2", function () {
+        expect(isEven(2)).toEqual("true");
+    })
+})
+
 // Unit tests for the addTwoNumbers function
 describe("add", function () {
     it("should be a defined function", function () {

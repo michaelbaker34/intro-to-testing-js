@@ -14,6 +14,12 @@ function isFive(num) {
 
 }
 
+// isEven function
+function isEven(num) {
+    num = 2;
+    return Boolean(num % 2 === 0);
+}
+
 // add function
 function add(num1, num2) {
 
