@@ -55,7 +55,28 @@ describe("isEven", function () {
         expect(typeof isEven()).toBe("boolean");
     });
     it("should return true when passed the number 2", function () {
-        expect(isEven(2)).toEqual("true");
+        expect(isEven(2)).toBe(true);
+    })
+    it("should return true when passed the number -4", function () {
+        expect(isEven(-4)).toBe(true);
+    })
+    it("should return true when passed the number 8", function () {
+        expect(isEven(8)).toBe(true);
+    })
+    it("should return false when passed the number 3", function () {
+        expect(isEven(3)).toBe(false);
+    })
+    it("should return false when passed the string 'Banana'", function () {
+        expect(isEven("banana")).toBe(false);
+    })
+    it("should return false when passed infinity", function () {
+        expect(isEven(Infinity)).toBe(false);
+    })
+    it("should return false when passed an empty parameter", function () {
+        expect(isEven()).toBe(false);
+    })
+    it("should return false when passed a boolean", function () {
+        expect(isEven("boolean")).toBe(false);
     })
 })
 
