@@ -80,6 +80,16 @@ describe("isEven", function () {
     })
 })
 
+// unit tests for isVowel function
+describe("isVowel", function () {
+    it("should be a defined function", function () {
+        expect(typeof isVowel).toBe("function");
+    });
+    it("should return boolean", function () {
+        expect(typeof isVowel()).toBe("boolean");
+    });
+})
+
 // Unit tests for the addTwoNumbers function
 describe("add", function () {
     it("should be a defined function", function () {

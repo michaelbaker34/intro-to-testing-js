@@ -19,6 +19,11 @@ function isEven(num) {
     return Boolean(num % 2 === 0);
 }
 
+// isVowel function
+function isVowel(param) {
+    return Boolean(param);
+}
+
 // add function
 function add(num1, num2) {
 
