@@ -21,7 +21,7 @@ function isEven(num) {
 
 // isVowel function
 function isVowel(param) {
-    return Boolean(param);
+    return ("aeiouAEIOU".indexOf(param) !== -1);
 }
 
 // add function
