@@ -116,4 +116,25 @@ describe("add", function () {
     it("should be a defined function", function () {
         expect(typeof add).toBe("function");
     });
+    it("should return 5 when passed 2 and 3", function () {
+        expect(add(2, 3)).toEqual(5);
+    });
+    it("should return -12 when passed -3 and -9", function () {
+        expect(add(-3, -9)).toEqual(-12);
+    });
+    it("should return 11 when passed 5 and 6", function () {
+        expect(add(5, 6)).toEqual(11);
+    });
+    it("should return 6 when passed -4 and 10", function () {
+        expect(add(-4, 10)).toEqual(6);
+    });
+    it("should return NaN when passed banana and split", function () {
+        expect(add("banana", "split")).toEqual(NaN);
+    });
+    it("should return NaN when passed 2 and apples", function () {
+        expect(add(2, "apples")).toEqual(NaN);
+    });
+    it("should return NaN when passed an empty parameter", function () {
+        expect(add()).toEqual(NaN);
+    });
 });
